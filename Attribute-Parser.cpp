@@ -21,15 +21,15 @@ int main(void)
 		if(temp[1]=='/')
 		{
 			temp.erase(0,2);
-    	    temp.pop_back();
-	        stringstream word;
-	        word<<temp;
-	        string tag;
-	        word>>tag;
-	        int tag_size=tag.size();
-	        int tag_pos=tag_preamble.find(tag);
+    	    		temp.pop_back();
+	        	stringstream word;
+	        	word<<temp;
+	        	string tag;
+	        	word>>tag;
+	        	int tag_size=tag.size();
+	        	int tag_pos=tag_preamble.find(tag);
 			if(tag_preamble.size()>tag_size)
-	        	tag_preamble.erase(tag_pos-1,tag_size+1);
+	        		tag_preamble.erase(tag_pos-1,tag_size+1);
 			else
 				tag_preamble.clear();
 		}
